@@ -6,6 +6,7 @@ import type Scroll from '../blots/scroll.js';
 import type { Range } from '../core/selection.js';
 
 export interface HistoryOptions {
+  ignoreSilent: boolean;
   userOnly: boolean;
   delay: number;
   maxStack: number;
@@ -26,6 +27,7 @@ class History extends Module<HistoryOptions> {
     delay: 1000,
     maxStack: 100,
     userOnly: false,
+    ignoreSilent: false
   };
 
   lastRecorded = 0;
@@ -44,7 +46,13 @@ class History extends Module<HistoryOptions> {
           }
         } else if (eventName === Quill.events.TEXT_CHANGE) {
           if (!this.ignoreChange) {
-            if (!this.options.userOnly || source === Quill.sources.USER) {
+            let shouldRecord = true;
+            if (this.options.ignoreSilent && source === Quill.sources.SILENT) {
+              shouldRecord = false;
+            } else {
+              shouldRecord = !this.options.userOnly || source === Quill.sources.USER;
+            }
+            if (shouldRecord) {
               this.record(value, oldValue);
             } else {
               this.transform(value);
