@@ -1,11 +1,13 @@
 import { LeafBlot, Scope } from '@shaxpir/parchment';
-import { cloneDeep, isEqual } from 'lodash-es';
+import isEqual from 'fast-deep-equal';
+import rfdc from 'rfdc';
 import Emitter from './emitter.js';
 import type { EmitterSource } from './emitter.js';
 import logger from './logger.js';
 import type Cursor from '../blots/cursor.js';
 import type Scroll from '../blots/scroll.js';
 
+const cloneDeep = rfdc();
 const debug = logger('quill:selection');
 
 type NativeRange = AbstractRange;

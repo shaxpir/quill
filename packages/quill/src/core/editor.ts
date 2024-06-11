@@ -1,4 +1,6 @@
-import { cloneDeep, isEqual, merge } from 'lodash-es';
+import { merge } from 'lodash-es';
+import isEqual from 'fast-deep-equal';
+import rfdc from 'rfdc';
 import { LeafBlot, EmbedBlot, Scope, ParentBlot } from '@shaxpir/parchment';
 import type { Blot } from '@shaxpir/parchment';
 import Delta, { AttributeMap, Op } from '@shaxpir/quill-delta';
@@ -9,6 +11,7 @@ import type Scroll from '../blots/scroll.js';
 import TextBlot, { escapeText } from '../blots/text.js';
 import { Range } from './selection.js';
 
+const cloneDeep = rfdc();
 const ASCII = /^[ -~]*$/;
 
 type SelectionInfo = {

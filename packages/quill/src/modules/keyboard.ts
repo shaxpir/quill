@@ -1,4 +1,5 @@
-import { cloneDeep, isEqual } from 'lodash-es';
+import isEqual from 'fast-deep-equal';
+import rfdc from 'rfdc';
 import Delta, { AttributeMap } from '@shaxpir/quill-delta';
 import { EmbedBlot, Scope, TextBlot } from '@shaxpir/parchment';
 import type { Blot, BlockBlot } from '@shaxpir/parchment';
@@ -8,6 +9,7 @@ import Module from '../core/module.js';
 import type { BlockEmbed } from '../blots/block.js';
 import type { Range } from '../core/selection.js';
 
+const cloneDeep = rfdc();
 const debug = logger('quill:keyboard');
 
 const SHORTKEY = /Mac/i.test(navigator.platform) ? 'metaKey' : 'ctrlKey';
