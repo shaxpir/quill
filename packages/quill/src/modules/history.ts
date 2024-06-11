@@ -143,6 +143,10 @@ class History extends Module<HistoryOptions> {
     }
   }
 
+  canRedo() {
+    return this.stack.redo.length > 0;
+  }
+
   redo() {
     this.change('redo', 'undo');
   }
@@ -150,6 +154,10 @@ class History extends Module<HistoryOptions> {
   transform(delta: Delta) {
     transformStack(this.stack.undo, delta);
     transformStack(this.stack.redo, delta);
+  }
+
+  canUndo() {
+    return this.stack.undo.length > 0;
   }
 
   undo() {
