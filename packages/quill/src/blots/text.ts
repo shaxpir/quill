@@ -1,4 +1,4 @@
-import { TextBlot } from 'parchment';
+import { TextBlot } from '@shaxpir/parchment';
 
 class Text extends TextBlot {}
 

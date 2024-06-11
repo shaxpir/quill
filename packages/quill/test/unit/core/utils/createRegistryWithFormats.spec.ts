@@ -3,7 +3,7 @@ import { describe, expect, test, vitest } from 'vitest';
 import createRegistryWithFormats from '../../../../src/core/utils/createRegistryWithFormats.js';
 import { globalRegistry } from '../../../../src/core/quill.js';
 import logger from '../../../../src/core/logger.js';
-import { Registry } from 'parchment';
+import { Registry } from '@shaxpir/parchment';
 import Inline from '../../../../src/blots/inline.js';
 import Container from '../../../../src/blots/container.js';
 

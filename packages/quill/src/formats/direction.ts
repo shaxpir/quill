@@ -1,4 +1,4 @@
-import { Attributor, ClassAttributor, Scope, StyleAttributor } from 'parchment';
+import { Attributor, ClassAttributor, Scope, StyleAttributor } from '@shaxpir/parchment';
 
 const config = {
   scope: Scope.BLOCK,

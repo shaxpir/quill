@@ -1,4 +1,4 @@
-import { ClassAttributor, Scope } from 'parchment';
+import { ClassAttributor, Scope } from '@shaxpir/parchment';
 import { ColorAttributor } from './color.js';
 
 const BackgroundClass = new ClassAttributor('background', 'ql-bg', {

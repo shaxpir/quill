@@ -1,6 +1,6 @@
-import Delta from 'quill-delta';
-import { ClassAttributor, Scope } from 'parchment';
-import type { Blot, ScrollBlot } from 'parchment';
+import Delta from '@shaxpir/quill-delta';
+import { ClassAttributor, Scope } from '@shaxpir/parchment';
+import type { Blot, ScrollBlot } from '@shaxpir/parchment';
 import Inline from '../blots/inline.js';
 import Quill from '../core/quill.js';
 import Module from '../core/module.js';

@@ -1,4 +1,4 @@
-import { ParentBlot } from 'parchment';
+import { ParentBlot } from '@shaxpir/parchment';
 import Module from '../core/module.js';
 import Quill from '../core/quill.js';
 

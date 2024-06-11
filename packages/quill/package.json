@@ -1,16 +1,16 @@
 {
-  "name": "quill",
-  "version": "2.0.3",
+  "name": "@shaxpir/quill",
+  "version": "3.3.0",
   "description": "Your powerful, rich text editor",
   "author": "Jason Chen <jhchen7@gmail.com>",
   "homepage": "https://quilljs.com",
   "main": "quill.js",
   "type": "module",
   "dependencies": {
+    "@shaxpir/parchment": "4.0.3",
+    "@shaxpir/quill-delta": "^6.1.1",
     "eventemitter3": "^5.0.1",
-    "lodash-es": "^4.17.21",
-    "parchment": "^3.0.0",
-    "quill-delta": "^5.1.0"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@babel/cli": "^7.23.9",
@@ -62,11 +62,8 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slab/quill.git",
+    "url": "git+https://github.com/shaxpir/quill.git",
     "directory": "packages/quill"
-  },
-  "bugs": {
-    "url": "https://github.com/slab/quill/issues"
   },
   "prettier": {
     "singleQuote": true

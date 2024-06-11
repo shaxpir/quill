@@ -1,4 +1,4 @@
-import Delta from 'quill-delta';
+import Delta from '@shaxpir/quill-delta';
 import Quill from '../../../src/core.js';
 import { describe, expect, test } from 'vitest';
 import { createRegistry } from '../__helpers__/factory.js';

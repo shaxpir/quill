@@ -1,5 +1,5 @@
-import Delta from 'quill-delta';
-import { EmbedBlot, Scope } from 'parchment';
+import Delta from '@shaxpir/quill-delta';
+import { EmbedBlot, Scope } from '@shaxpir/parchment';
 import Quill from '../core/quill.js';
 import logger from '../core/logger.js';
 import Module from '../core/module.js';

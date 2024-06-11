@@ -1,4 +1,4 @@
-import type { LinkedList } from 'parchment';
+import type { LinkedList } from '@shaxpir/parchment';
 import Block from '../blots/block.js';
 import Container from '../blots/container.js';
 

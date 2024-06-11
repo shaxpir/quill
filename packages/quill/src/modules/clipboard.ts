@@ -1,4 +1,4 @@
-import type { ScrollBlot } from 'parchment';
+import type { ScrollBlot } from '@shaxpir/parchment';
 import {
   Attributor,
   BlockBlot,
@@ -6,8 +6,8 @@ import {
   EmbedBlot,
   Scope,
   StyleAttributor,
-} from 'parchment';
-import Delta from 'quill-delta';
+} from '@shaxpir/parchment';
+import Delta from '@shaxpir/quill-delta';
 import { BlockEmbed } from '../blots/block.js';
 import type { EmitterSource } from '../core/emitter.js';
 import logger from '../core/logger.js';

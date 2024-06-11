@@ -1,7 +1,7 @@
 import { merge } from 'lodash-es';
-import * as Parchment from 'parchment';
-import type { Op } from 'quill-delta';
-import Delta from 'quill-delta';
+import * as Parchment from '@shaxpir/parchment';
+import type { Op } from '@shaxpir/quill-delta';
+import Delta from '@shaxpir/quill-delta';
 import type { BlockEmbed } from '../blots/block.js';
 import type Block from '../blots/block.js';
 import type Scroll from '../blots/scroll.js';

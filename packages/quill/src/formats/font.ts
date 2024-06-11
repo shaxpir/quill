@@ -1,4 +1,4 @@
-import { ClassAttributor, Scope, StyleAttributor } from 'parchment';
+import { ClassAttributor, Scope, StyleAttributor } from '@shaxpir/parchment';
 
 const config = {
   scope: Scope.INLINE,
