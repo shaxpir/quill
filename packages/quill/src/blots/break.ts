@@ -1,4 +1,4 @@
-import { EmbedBlot } from 'parchment';
+import { EmbedBlot } from '@shaxpir/parchment';
 
 class Break extends EmbedBlot {
   static value() {

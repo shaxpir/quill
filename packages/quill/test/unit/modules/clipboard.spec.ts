@@ -1,4 +1,4 @@
-import Delta from 'quill-delta';
+import Delta from '@shaxpir/quill-delta';
 import { describe, expect, test, vitest } from 'vitest';
 import Quill from '../../../src/core.js';
 import { Range } from '../../../src/core/selection.js';
@@ -17,7 +17,7 @@ import {
 } from '../../../src/formats/table.js';
 import Video from '../../../src/formats/video.js';
 import { createRegistry } from '../__helpers__/factory.js';
-import type { RegistryDefinition } from 'parchment';
+import type { RegistryDefinition } from '@shaxpir/parchment';
 import {
   DirectionAttribute,
   DirectionClass,

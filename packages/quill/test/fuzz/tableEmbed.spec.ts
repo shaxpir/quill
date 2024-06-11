@@ -1,5 +1,5 @@
-import type { AttributeMap } from 'quill-delta';
-import Delta from 'quill-delta';
+import type { AttributeMap } from '@shaxpir/quill-delta';
+import Delta from '@shaxpir/quill-delta';
 import TableEmbed from '../../src/modules/tableEmbed.js';
 import type {
   CellData,

@@ -1,9 +1,9 @@
-import Delta from 'quill-delta';
+import Delta from '@shaxpir/quill-delta';
 import Editor from '../../../src/core/editor.js';
 import Block from '../../../src/blots/block.js';
 import { Range } from '../../../src/core/selection.js';
 import Scroll from '../../../src/blots/scroll.js';
-import { Registry } from 'parchment';
+import { Registry } from '@shaxpir/parchment';
 import Text from '../../../src/blots/text.js';
 import Emitter from '../../../src/core/emitter.js';
 import Break from '../../../src/blots/break.js';

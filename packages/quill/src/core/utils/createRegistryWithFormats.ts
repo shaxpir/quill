@@ -1,4 +1,4 @@
-import { Registry } from 'parchment';
+import { Registry } from '@shaxpir/parchment';
 
 const MAX_REGISTER_ITERATIONS = 100;
 const CORE_FORMATS = ['block', 'break', 'cursor', 'inline', 'scroll', 'text'];

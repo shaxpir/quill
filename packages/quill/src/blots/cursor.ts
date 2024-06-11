@@ -1,5 +1,5 @@
-import { EmbedBlot, Scope } from 'parchment';
-import type { Parent, ScrollBlot } from 'parchment';
+import { EmbedBlot, Scope } from '@shaxpir/parchment';
+import type { Parent, ScrollBlot } from '@shaxpir/parchment';
 import type Selection from '../core/selection.js';
 import TextBlot from './text.js';
 import type { EmbedContextRange } from './embed.js';

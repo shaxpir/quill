@@ -4,9 +4,9 @@ import {
   EmbedBlot,
   LeafBlot,
   Scope,
-} from 'parchment';
-import type { Blot, Parent } from 'parchment';
-import Delta from 'quill-delta';
+} from '@shaxpir/parchment';
+import type { Blot, Parent } from '@shaxpir/parchment';
+import Delta from '@shaxpir/quill-delta';
 import Break from './break.js';
 import Inline from './inline.js';
 import TextBlot from './text.js';

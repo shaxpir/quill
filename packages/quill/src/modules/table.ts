@@ -1,4 +1,4 @@
-import Delta from 'quill-delta';
+import Delta from '@shaxpir/quill-delta';
 import Quill from '../core/quill.js';
 import Module from '../core/module.js';
 import {

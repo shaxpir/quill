@@ -1,4 +1,4 @@
-import Delta from 'quill-delta';
+import Delta from '@shaxpir/quill-delta';
 import {
   createScroll as baseCreateScroll,
   createRegistry,
