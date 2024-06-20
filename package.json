@@ -1,6 +1,6 @@
 {
   "name": "@shaxpir/quill-monorepo",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Quill development environment",
   "private": true,
   "author": "Jason Chen <jhchen7@gmail.com>",
