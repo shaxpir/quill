@@ -252,10 +252,11 @@ class Keyboard extends Module<KeyboardOptions> {
             return false;
           }
         }
-        if (binding.prefix != null && !binding.prefix.test(curContext.prefix)) {
+        const b = binding as any;
+        if (b.hasOwnProperty('prefix') && b.prefix.hasOwnProperty('test') &&  !b.prefix.test(curContext.prefix)) {
           return false;
         }
-        if (binding.suffix != null && !binding.suffix.test(curContext.suffix)) {
+        if (b.hasOwnProperty('suffix') && b.suffix.hasOwnProperty('test') && !b.suffix.test(curContext.suffix)) {
           return false;
         }
         // @ts-expect-error Fix me later
