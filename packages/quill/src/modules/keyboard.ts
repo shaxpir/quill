@@ -9,7 +9,8 @@ import Module from '../core/module.js';
 import type { BlockEmbed } from '../blots/block.js';
 import type { Range } from '../core/selection.js';
 
-const cloneDeep = rfdc();
+// @ts-ignore: By default, 'rfdc' doesn't clone RegExp objects, which are used in keyboard bindings.
+const cloneDeep = rfdc({ constructorHandlers: [[ RegExp, (o:any) => new RegExp(o) ]] });
 const debug = logger('quill:keyboard');
 
 const SHORTKEY = /Mac/i.test(navigator.platform) ? 'metaKey' : 'ctrlKey';
@@ -252,11 +253,10 @@ class Keyboard extends Module<KeyboardOptions> {
             return false;
           }
         }
-        const b = binding as any;
-        if (b.hasOwnProperty('prefix') && b.prefix.hasOwnProperty('test') &&  !b.prefix.test(curContext.prefix)) {
+        if (binding.prefix != null && !binding.prefix.test(curContext.prefix)) {
           return false;
         }
-        if (b.hasOwnProperty('suffix') && b.suffix.hasOwnProperty('test') && !b.suffix.test(curContext.suffix)) {
+        if (binding.suffix != null && !binding.suffix.test(curContext.suffix)) {
           return false;
         }
         // @ts-expect-error Fix me later
